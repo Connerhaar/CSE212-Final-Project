@@ -50,7 +50,7 @@ To remove any node in between here are the steps:
 2. Set the next of the node before teh current to the node after current.
 
 ## Performance
-the performance can vary depending on what you are doing here is a list of the different actions and the performance of them
+The [performance](performance.md) can vary depending on what you are doing. Here is a list of the different actions and the performance of them
 
 - Inserting the head: this is a performance of O(1)
 - Inserting the tail: this is a performace of O(1)

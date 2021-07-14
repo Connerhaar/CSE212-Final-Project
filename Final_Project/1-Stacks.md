@@ -14,7 +14,7 @@ An example of this would be a stack of pennies. You can keep adding to a stack o
 
 
 ## The Performance
-the performance of a stack can vary depending on what part of the stack you are trying to get to. As you can see above the performance of `pushing` and `popping` from a stack is O(1). The problem occurs when we want to reach the bottom of the stakc or the first item in the stack. This is a problem becuase you have to go through every other penny in the stack before getting to the last one. This would result in a performance of O(n).
+the [performance](performance.md) of a stack can vary depending on what part of the stack you are trying to get to. As you can see above the performance of `pushing` and `popping` from a stack is O(1). The problem occurs when we want to reach the bottom of the stakc or the first item in the stack. This is a problem becuase you have to go through every other penny in the stack before getting to the last one. This would result in a performance of O(n).
 
 
 ## What are stacks used for?
