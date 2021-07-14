@@ -16,7 +16,7 @@ Like a snake if you cut off the tail you lose everything behind the tail. Then t
 3. Set the "previous"  as the current head to the new node
 4. set the head equal to the new node.
 
-![inserting head](Images/inserting_head.png)
+![](Images/inserting_head.png)
 
 as you can see this makes it so we dont lose everyhting behind the head node. Then there is a way to do this for the tail with teh following steps.
 
@@ -25,13 +25,14 @@ as you can see this makes it so we dont lose everyhting behind the head node. Th
 3. Set the "next" of the current tail to the new node
 4. set the tail equal to the new node.
 
+![](Images/Inserting_tail.png)
 Then to insert in any location you can use teh following steps.
 1. Create a new node
 2. Set the "previous" of the new node to the current node.
 3. Set the "next" of the new node to the next node after the current node. 
-4. set set teh previous and the next node after the current to the new node.
+4. set set the previous and the next node after the current to the new node.
 5. set the next of the current node to the new node
-
+![](Images/Snake_body.png)
 
 ### Removing a Node
 Removing a node is easier then inserting a node, but its still important so that you dont lose all the information behind the node you are removing. 
@@ -58,6 +59,20 @@ the performance can vary depending on what you are doing here is a list of the d
 - Removing the tail: this is a performance of O(1)
 - Removing in the middle: this is a performance of O(n) because you havr to cycle throught the nodes to find the node you are removing. 
 
-## Example
+## Example: Finding a value
+```py
+def finding_values(self, value):
+    # This sets the current node as the tail of the list
+    current_node = self.tail
+    # This loops until the current node is equal to the value
+    while current != value:
+        # You can then do any action throuh each loop
+        print(current.data)
+        # This will set the current node as the node 
+        # previous to the node you were at previously
+        current = current.previous
+```
+## Sample Problem: Song Queue
+In this sample problem you will be creating a Song queue. In this code you will write code so that you can move a song from one part of the queue to another part of the queue. The functions that queue and remove songs from the queue have already been written for you in the following code [Sample Problem](Python_Files/Given_code2.py).
 
-## Sample Problem
+After trying to solve this problem for half an hour or solving the problem you can look at the [Sample Solution](Python_Files/Sample_answer2.py).
