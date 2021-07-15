@@ -1,15 +1,15 @@
 # Linked Lists
-## What is a Linked list?
+## `What is a Linked list?`
 A linked list is different then what we had talked about before with stacks becuase everyhting doesnt have a set index. In a linked list each item has a certain address. Then each address is connected from one to another.
 
-## A Snake of Linked Lists
+## `A Snake of Linked Lists`
 Just like a snake a linked list has a head, a tail, and everything in between. In a linked list to access one of the middle sections you either go from the head back or the tail forward. 
 
-![snake](Images\Snake_linked_list.jpeg)
-## How to remove and add sections
+![](Images\Snake_linked_list.jpeg)
+## `How to remove and add sections`
 To remove a node from the linked list there is an important process so that you dont lose the rest of the information behind the node you are replacing or removing. 
 
-### Inserting a Node
+### `Inserting a Node`
 Like a snake if you cut off the tail you lose everything behind the tail. Then the last part you cut off would be the new tail. When creating a node if you are inserting it at the begining 
 1. Create a new node
 2. Set the next node as the current head
@@ -34,7 +34,7 @@ Then to insert in any location you can use teh following steps.
 5. set the next of the current node to the new node
 ![](Images/Snake_body.png)
 
-### Removing a Node
+### `Removing a Node`
 Removing a node is easier then inserting a node, but its still important so that you dont lose all the information behind the node you are removing. 
 
 To remove the head node here are the steps:
@@ -49,7 +49,7 @@ To remove any node in between here are the steps:
 1. Set the previous of the node after current ro the node before current.
 2. Set the next of the node before teh current to the node after current.
 
-## Performance
+## `Performance`
 The [performance](performance.md) can vary depending on what you are doing. Here is a list of the different actions and the performance of them
 
 - Inserting the head: this is a performance of O(1)
@@ -59,7 +59,7 @@ The [performance](performance.md) can vary depending on what you are doing. Here
 - Removing the tail: this is a performance of O(1)
 - Removing in the middle: this is a performance of O(n) because you havr to cycle throught the nodes to find the node you are removing. 
 
-## Example: Finding a value
+## `Example: Finding a value`
 ```py
 def finding_values(self, value):
     # This sets the current node as the tail of the list
@@ -72,7 +72,7 @@ def finding_values(self, value):
         # previous to the node you were at previously
         current = current.previous
 ```
-## Sample Problem: Song Queue
+## `Sample Problem: Song Queue`
 In this sample problem you will be creating a Song queue. In this code you will write code so that you can move a song from one part of the queue to another part of the queue. The functions that queue and remove songs from the queue have already been written for you in the following code [Sample Problem](Python_Files/Given_code2.py).
 
 After trying to solve this problem for half an hour or solving the problem you can look at the [Sample Solution](Python_Files/Sample_answer2.py).
