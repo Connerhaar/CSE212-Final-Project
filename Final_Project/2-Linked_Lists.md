@@ -66,7 +66,7 @@ def finding_values(self, value):
     current_node = self.tail
     # This loops until the current node is equal to the value
     while current != value:
-        # You can then do any action throuh each loop
+        # You can then do any action through each loop
         print(current.data)
         # This will set the current node as the node 
         # previous to the node you were at previously
