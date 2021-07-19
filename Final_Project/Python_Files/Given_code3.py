@@ -57,33 +57,12 @@ class BST:
         # Checks if the data you want to delete
         # is on the right side of the root
         elif data > root.data:
-            root.right = self.delete_node(root.right, data)
-    
-        # if the data you want to delete is the root
-        else:
-    
-            # Execute this this if the the node has one child node under it
-            if root.left is None:
-                temp = root.right
-                root = None
-                return temp
-    
-            elif root.right is None:
-                temp = root.left
-                root = None
-                return temp
-    
-            # Node with two children:
-            # sets the temporary value as the lowest value in the tree
-            temp = self.get_lowest_value(root.right)
-    
-            # copies the data of the temporary data to the root
-            root.data = temp.data
-    
-            # copy the deleted value to the root right
-            root.right = self.delete_node(root.right, temp.data)
- 
-        return root
+            root.right = self.delete_Node(root.right, data)
+
+
+        # this is where you will start writing code to delete a node
+        # with 1 or 2 child nodes
+        pass
 
     def __iter__(self):
         """
@@ -121,5 +100,5 @@ tree.insert(9)
 tree.insert(4)
 tree.delete_node(tree.root, 7)
 tree.delete_node(tree.root, 3)
-for node in tree: 
+for node in tree:
     print(node) # 1, 4, 5, 9, 10

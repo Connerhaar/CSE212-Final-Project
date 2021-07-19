@@ -60,6 +60,8 @@ The [performance](performance.md) can vary depending on what you are doing. Here
 - Removing in the middle: this is a performance of O(n) because you havr to cycle throught the nodes to find the node you are removing. 
 
 ## `Example: Finding a value`
+
+One of the problems with linked lists are that they have a fairly low performance when searching for a value. In the example below this is how you could search for a given value in the linked list. If the the value is not in the list or its the last item it will take longer.
 ```py
 def finding_values(self, value):
     # This sets the current node as the tail of the list
